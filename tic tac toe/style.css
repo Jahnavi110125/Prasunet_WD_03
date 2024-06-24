@@ -1,0 +1,806 @@
+body{
+    margin: 0;
+    width:100%;
+    height: 100vh;
+    /* position: absolute; */
+    /* background-color: black; */
+    /* background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%); */
+    background-image: linear-gradient(to top, #e8198b 0%, #c7eafd 100%);
+    /* background-image: linear-gradient(to top, #ff9a9e 0%, #fecfef 99%, #fecfef 100%); */
+    /* background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%); */
+    color: white;
+    overflow: hidden;
+}
+
+
+.heading{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    /* margin-left: 43%; */
+    padding-top:2%;
+    color:crimson;
+}
+
+.first{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10%;
+}
+
+.first button{
+  cursor: pointer;
+  background-color: #c7eafd;
+  border-radius: 10px;
+  margin-left: 15%;
+  padding: 6px;
+}
+
+.first button:hover{
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px dashed black;
+}
+
+.details1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:300px;
+  height:280px;
+  /* margin-left:40%; */
+  margin-top: 10%;
+  border: 1px white solid;
+  border-radius: 10px;
+  padding: 10px;
+  background-color:transparent;
+  color: black;
+}
+
+.details1 label,button{
+  font-size: 20px;
+}
+
+.details1 input{
+  width: 280px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.details1 button{
+  margin-top:20px;
+  width:100px;
+  border-radius: 5px;
+  padding: 5px;
+  margin-left: 30%;
+}
+
+#cname{
+  font-size: 16px;
+  display: block;
+  background-color: white;
+  /* border: 1px solid black; */
+  width: 280px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+#userX1:hover, #cname:hover{
+  cursor: pointer;
+  border: 1px solid black;
+  background-color: lavenderblush;
+}
+
+#startGame1 {
+  --b: 3px; 
+  --s: .45em; 
+  --color:lightgreen;
+  
+  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: .6em;
+  font-size: 16px;
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+} 
+
+#startGame1:hover,
+#startGame1:focus-visible{
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: .05em;
+  cursor: pointer;
+}
+
+#startGame1:active {
+  background:var(--color);
+  color: #fff;
+} 
+
+.det{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:300px;
+    height:280px;
+    /* margin-left:40%; */
+    margin-top: 10%;
+    border: 1px white solid;
+    border-radius: 10px;
+    padding: 10px;
+    background-color:transparent;
+    color: black;
+}
+
+.details label,button{
+    font-size: 20px;
+}
+
+.details input{
+    width: 280px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#userX{
+  background-color:white;
+  padding: 6px;
+  color: black;
+}
+
+#userO{
+  background-color: white;
+  padding: 6px;
+  color: black;
+}
+
+#userX:hover, #userO:hover{
+  cursor: pointer;
+  border: 1px solid black;
+  background-color: lavenderblush;
+}
+
+.details button{
+    margin-top:20px;
+    width:100px;
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 30%;
+}
+
+ #startGame {
+    --b: 3px; 
+    --s: .45em; 
+    --color:lightgreen;
+    
+    padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+    color: var(--color);
+    --_p: var(--s);
+    background:
+      conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+      var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+    transition: .3s linear, color 0s, background-color 0s;
+    outline: var(--b) solid #0000;
+    outline-offset: .6em;
+    font-size: 16px;
+  
+    border: 0;
+  
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  } 
+  
+ #startGame:hover,
+  #startGame:focus-visible{
+    --_p: 0px;
+    outline-color: var(--color);
+    outline-offset: .05em;
+    cursor: pointer;
+  }
+  
+  #startGame:active {
+    background:var(--color);
+    color: #fff;
+  } 
+ 
+ .main{
+  display: flex;
+  justify-content: space-between;
+ }
+
+.left{
+  margin-left: 10%;
+  margin-top: 2%;
+  /* display: flex; */
+}
+
+  #turning{
+    padding: 5px;
+    margin-left:46%;
+    margin-top:2%;
+    width:300px;
+    height:20px;
+    align-items: center;
+}
+
+#turn{
+    margin: 10px;
+    font-size: 20px;
+    color: black;
+}
+
+
+#turning1{
+  padding: 4px;
+    margin-left:44%;
+    margin-top:2%;
+    width:300px;
+    height:40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#turning1 p{
+  font-size: 20px;
+  color: black;
+}
+
+
+.box{
+    height: 400px;
+    width:400px;
+    margin-top: 1%;
+    margin-left: 38%;
+    display: none;
+}
+
+.left table td:hover{
+  /* background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%); */
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+.left table td {
+    width: 33.33%; /* Ensures each cell is one-third of the table's width */
+    height: 33.33%; /* Ensures each cell is one-third of the table's height */
+    text-align: center; /* Centers the text horizontally */
+    vertical-align: middle; /* Centers the text vertically */
+    font-size: 24px; /* Adjusts the font size */
+    cursor: pointer; /* Changes the cursor to pointer on hover */
+    background-color: blanchedalmond;
+}
+
+.winning{
+    margin-top:50px;
+    margin-left:70px;
+    font-size: 25px;
+}
+
+.restartGame {
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-left:130px;
+  padding: 10px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid cyan;
+  color:white;
+  display: inline-block;
+  font-size: 15px;
+  line-height: 15px;
+  padding: 18px 18px 17px;
+  text-decoration: none;
+  cursor: pointer;
+  background:black;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.restartGame span:first-child {
+  position: relative;
+  transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
+  z-index: 10;
+}
+
+.restartGame span:last-child {
+  color:black;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  transition: all 500ms cubic-bezier(0.48, 0, 0.12, 1);
+  z-index: 100;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  transform: translateY(225%) translateX(-50%);
+  height: 14px;
+  line-height: 13px;
+}
+
+.restartGame:after {
+  content: "";
+  position: absolute;
+  bottom: -50%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color:cyan;
+  transform-origin: bottom center;
+  transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
+  transform: skewY(9.3deg) scaleY(0);
+  z-index: 50;
+}
+
+.restartGame:hover:after {
+  transform-origin: bottom center;
+  transform: skewY(9.3deg) scaleY(2);
+}
+
+.restartGame:hover span:last-child {
+  transform: translateX(-50%) translateY(-100%);
+  opacity: 1;
+  transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
+}
+
+.right{
+  margin-right: 20%;
+  margin-top: 4%;
+}
+
+#table2 td{
+  text-align: center;
+  vertical-align: middle;
+  padding: 20px;
+}
+
+#exit {
+  margin-left:30%;
+  margin-top:60%;
+  appearance: none;
+  background-color: black;
+  border: 2px solid rgb(166, 13, 87);
+  border-radius: 50%;
+  box-sizing: border-box;
+  color:white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Clarkson,Helvetica,sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1em;
+  opacity: 1;
+  outline: 0;
+  padding: 1.5em 2.2em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-rendering: geometricprecision;
+  text-transform: uppercase;
+  transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1),background-color 100ms cubic-bezier(.694, 0, 0.335, 1),color 100ms cubic-bezier(.694, 0, 0.335, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+#exit:before {
+  animation: opacityFallbackOut .5s step-end forwards;
+  backface-visibility: hidden;
+  background-color:rgb(241, 61, 187);
+  clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  border-radius: 50%;
+  top: 0;
+  transform: translateZ(0);
+  transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
+  width: 100%;
+}
+
+#exit:hover{
+  color: black;
+  font-weight: bold;
+}
+
+#exit:hover:before {
+  animation: opacityFallbackIn 0s step-start forwards;
+  clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+
+ 
+}
+
+#exit:after {
+  background-color: #FFFFFF;
+}
+
+#exit span {
+  z-index: 1;
+  position: relative;
+}
+
+.lastwind{
+  position: relative;
+
+}
+
+
+.fp{
+  height:250px;
+  width:400px;
+  position: absolute;
+  /* transform: translate(-50%, -50%); */
+  top:30%;
+  left:38%;
+  background-color:rgb(220, 248, 250);
+  border: 1px solid rgb(188, 178, 178);
+  border-radius: 10px;
+  /* top: 50%;  */
+    /* left: 50%;  */
+}
+
+.fp h4{
+  color: black;
+  margin-left:20%;
+  margin-top:10px;
+  font-size: 30px;
+}
+  
+#final{
+  color:yellowgreen;
+  font-size: 25px;
+  padding: 40px;
+}
+
+canvas{
+  background:#000;
+  top: 0;
+  left: 0;
+
+}
+
+.buttons{
+  margin-top: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.buttons button{
+  border-radius: 10px;
+}
+
+#resagain {
+  --bg: #000;
+  --hover-bg:lightpink;
+  --hover-text: #000;
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid var(--bg);
+  border-radius: 4px;
+  padding: 0.8em 2em;
+  background: var(--bg);
+  transition: 0.2s;
+}
+
+#resagain:hover {
+  color: var(--hover-text);
+  transform: translate(-0.25rem, -0.25rem);
+  background: var(--hover-bg);
+  box-shadow: 0.25rem 0.25rem var(--bg);
+}
+
+#resagain:active {
+  transform: translate(0);
+  box-shadow: none;
+}
+
+#quit {
+  background-color: black;
+  padding: 14px 40px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 2px dashed black;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .4s;
+ }
+ 
+ #quit span:last-child {
+  display: none;
+ }
+ 
+#quit:hover {
+  transition: .4s;
+  border: 2px dashed black;
+  background-color:white;
+  color: black;
+ }
+ 
+ #quit:active {
+  background-color: #87dbd0;
+ }
+ 
+ #newb{
+  display: none;
+ }
+
+ #newb{
+  /* margin-left:30%;
+  margin-top:50%; */
+  appearance: none;
+  background-color: black;
+  border: 2px solid rgb(125, 7, 7);
+  border-radius: 50%;
+  box-sizing: border-box;
+  color:white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Clarkson,Helvetica,sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1em;
+  opacity: 1;
+  outline: 0;
+  padding: 1.5em 2.2em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-rendering: geometricprecision;
+  text-transform: uppercase;
+  transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1),background-color 100ms cubic-bezier(.694, 0, 0.335, 1),color 100ms cubic-bezier(.694, 0, 0.335, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+#newb:before {
+  animation: opacityFallbackOut .5s step-end forwards;
+  backface-visibility: hidden;
+  background-color:rgba(220, 20, 20, 0.833);
+  clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  border-radius: 50%;
+  top: 0;
+  transform: translateZ(0);
+  transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
+  width: 100%;
+}
+
+#newb:hover:before {
+  animation: opacityFallbackIn 0s step-start forwards;
+  clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+ 
+}
+
+#newb:after {
+  background-color: #FFFFFF;
+}
+
+#newb span {
+  z-index: 1;
+  position: relative;
+}
+
+@media (max-width: 2000px) {
+  #newb{
+    display: none;
+  }
+} 
+
+@media (max-width: 1100px) and (min-width:950px){
+  .box {
+      margin-left: 20%; 
+  }
+  #newb{
+    display: none;
+  }
+
+  #turning1{
+    margin-left: 22%;
+  }
+}
+
+@media (max-width:1075px){
+  .fp{
+    left: 30%;
+  }
+}
+
+@media (max-width:950px){
+  .fp{
+    left:25%;
+  }
+}
+
+@media (max-width:850px){
+  .fp{
+    left:20%;
+  }
+}
+
+@media (max-width:750px){
+  .fp{
+    left:15%;
+  }
+}
+
+
+@media (max-width:650px){
+  .fp{
+    left:10%;
+  }
+  .first img{
+    width:220px;
+    height:150px;
+  }
+  .fleft button{
+    /* padding: 12px; */
+    margin-left: 8%;
+  }
+  .fright button{
+    margin-left: 8%;
+  }
+
+}
+
+@media (max-width:475px){
+  .first{
+   display: block;
+   margin-left: 20%;
+  }
+  .fright button{
+    margin-left: 4%;
+  }
+}
+
+@media (max-width:350px){
+  .first{
+    margin-left: 15%;
+  }
+}
+
+@media (max-width:320px){
+  .first{
+    margin-left: 10%;
+  }
+}
+
+@media (max-width:280px){
+  .first{
+    margin-left: 5%;
+  }
+}
+
+@media (max-width:250px){
+  .first{
+    margin-left: 1%;
+  }
+}
+
+@media (max-width:550px){
+  .fp{
+    left:5%;
+  }
+}
+
+@media (max-width:450px){
+  .fp{
+    left:0%;
+  }
+}
+
+@media (max-width: 951px) and (min-width:700px) {
+  .box {
+      margin-left: 5%; /
+  }
+  #turning{
+    margin-left: 30%;
+  }
+  #turning1{
+    margin-left: 15%;
+  }
+  #newb{
+    display: none;
+  }
+}
+
+@media (max-width:700px) and (min-width:610px){
+  .box{
+    margin-left: -5%;
+  }
+  #newb{
+    display: none;
+  }
+  #turning1{
+    margin-left: 6%;
+  }
+ .main{
+  justify-content:space-around ;
+ }
+ .right{
+  margin-left: -10%;
+ }
+
+ #turning{
+  margin-left: 2%;
+ }
+}
+
+@media (max-width: 610px) {
+  .right{
+    display: none !important;
+  }
+  .box{
+    margin-left: 7%;
+  }
+  #newb{
+    display: none;
+  }
+
+  #turning{
+    margin-left: 8%;
+  }
+
+  #turning1{
+    margin-left: 7%;
+  }
+ #newb{
+  display:block;
+  margin-top: -15%;
+ }
+ .restartGame{
+  margin-left: 45%;
+ }
+}
+
+@media (max-width:480px){
+  .box{
+ margin-left: 0%;
+  }
+}
+
+@media (Max-width:395px){
+  .box{
+    margin-left: -10%;
+  }
+
+  #turning1{
+    margin-left: -2%;
+  }
+}
+
+
+
+
+
+

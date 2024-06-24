@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="heading"><h1>TIC TAC TOE</h1></div>
+    <div class="first">
+        <div class="fleft">
+            <img src="p1.img" alt="" width="300" height="180">
+            <h4><button id="pp">Player VS Player</button></h4>
+        </div>
+        <div class="fright">
+            <img src="ai1.jpg" alt="" width="300" height="180">
+            <h4><button id="pc">Player VS Computer</button></h4>
+        </div>
+    </div>
+    <div class="det">
+    <div class="details1" style="display: none;">
+        <label for="userX1">Player X Name:</label><br><br>
+        <input type="text" id="userX1" placeholder="Enter Player X Name"><br><br>
+        <label >Computer Name:</label><br><br>
+        <label id="cname">Taceio</label> <br><br>
+        <!-- <input type="text" id="userO" placeholder="Enter Player O Name"><br><br> -->
+        <button id="startGame1">Play!!</button><br><br>
+        <!-- <button id="startGame" role="button"><span class="text">Play!!!!</span><span>Have Fun!!</span></button> -->
+    </div>
+    </div>
+
+    <div class="lastwind" style="display: none;">
+        <canvas id="canvas" style="display: none;"></canvas>
+        <div  class="fp">   
+            <h4 id="cong"></h4>
+            <div id = "winner" style="display: none;">
+                <label id="final"></label>
+            </div>
+            <div class="buttons">
+                <button id="resagain">Re-Match</button>
+                <button id="quit">Quit</button>
+            </div>
+        </div>
+
+    </div>
+    <div class="det">
+    <div class="details" style="display: none;">
+        <label for="userX">Player X Name:</label><br><br>
+        <input type="text" id="userX" placeholder="Enter Player X Name"><br><br>
+        <label for="userO">Player O Name:</label><br><br>
+        <input type="text" id="userO" placeholder="Enter Player O Name"><br><br>
+        <button id="startGame">Play!!</button><br><br>
+        <!-- <button id="startGame" role="button"><span class="text">Play!!!!</span><span>Have Fun!!</span></button> -->
+    </div>
+    </div>
+    <div class="main">
+        <div class="left">
+            <div id="turning" style="display: none;">
+                <label id="turn"></label>
+            </div>
+            <div id="turning1" style="display: none;">
+                <p id="t1"></p>
+                <p id="t2"></p>
+            </div>
+            <div class="box">
+            <table id="table1" cellspacing="3", cellpadding="3", style="height: 300px; width: 350px;" >
+                <tr>
+                    <td id="1"></td>
+                    <td id="2"></td>
+                    <td id="3"></td>
+                </tr>
+                <tr>
+                    <td id="4"></td>
+                    <td id="5"></td>
+                    <td id="6"></td>
+                </tr>
+                <tr>
+                    <td id="7"></td>
+                    <td id="8"></td>
+                    <td id="9"></td>
+                </tr>
+            </table>
+            <div class="winning" style="display: none ;">
+                <p id="msg">Let's see who wins?</p>
+            </div>
+
+            <div>
+                <!-- <button id="restartGame" style="display: none;">Restart</button> -->
+                <button class="restartGame" role="button"><span class="text">Restart</span><span>More Fun!!</span></button>
+                <button id="newb" role="button"><span class="text">Exit</span></button>
+            </div>
+            </div>
+        </div>
+        <div class="right" style="display: none;">
+            <h5 style="color: white; margin-left: 20%; font-size: 20px;">Score Board</h5>
+            <table  id="table2" border="2" cellpadding="2" style="height: 200px; width: 200px;">
+                <tr>                        
+                    <th>
+                        <i class="fa fa-user" style="font-size:48px;color:#c7eafd"></i>
+                        <p id="n1"></p>
+                    </th>
+                    <th>
+                        <i class="fa fa-user" style="font-size:48px;color:#e8198b"></i>
+                        <p id="n2"></p>
+                    </th>
+                </tr>
+                <tr>
+                    <td id="s1">0</td>
+                    <td id="s2">0</td>
+                </tr>
+            </table>
+            <div>
+                <button id="exit" role="button"><span class="text">Exit</span></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
